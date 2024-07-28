@@ -44,8 +44,7 @@ export default function ProductList({ products = [], countPerRow = 3 }) {
               component: { default: Thumbnail },
               props: { url: p.url, imageUrl: get(p, 'image.url'), alt: p.name },
               sortOrder: 10,
-              id: 'thumbnail',
-              style: { width: '150px', height: '150px' } 
+              id: 'thumbnail'
             },
             {
               component: { default: Name },
